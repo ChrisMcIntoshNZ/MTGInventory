@@ -1,0 +1,80 @@
+Card Name	Set	Foil (Y/N)?	TCGplayer market price	TCGplayer Median Price	Quantity	Note1	Note2	Note3
+Worthy Knight (Extended Art)	ELD	N			1			
+Witches Vengeance (Extended Art)	ELD	N			1			
+Molten Psyche	SOM	N			1			
+Stolen Strategy	BBD	N			1			
+Wildborn Preserver (Extended Art)	ELD	N			1			
+Incubation Druid	PPM20	N			1			
+Leonin Warleader	PPM20	N			3			
+Midnight Reaper	GRN	N			1			
+Risk Factor	GRN	N			5			
+"Niv-Mizzet, Parun"	GRN	N			1			
+Expansion // Explosion	GRN	N			3			
+"Ral, Izzet Viceroy"	GRN	N			2			
+Fae of Wishes (Showcase)	ELD	n			1			
+Folio of Fancies (Extended Art)	ELD	N			1			
+Verdant Sun's Avatar	PPM20	N			1			
+Regisaur Alpha	PPM20	N			2			
+Ripjaw Raptor	XLN	N			1			
+Sunbird's Invocation	XLN	N			1			
+Sunbird's Invocation	PPM20	N			1			
+Silverclad Ferocidons	PPM20	N			1			
+Admiral's Order	PPM20	N			1			
+Tempest Djinn	PPM20	N			1			
+Goblin Engineer	MH1	N			1			
+Negate	PPM20	N			10			
+Dread Presence	PPM20	N			1			
+Drawn from Dreams	PPM20	N			1			
+Temple of Silence	PPM20	N			2			
+Lovestruck Beast (Showcase)	ELD	N			1			
+Castle Embereth	ELD	N			3			
+Temple of Mystery	M20	N			2			
+Temple of Mystery	PPM20	N			1			
+								
+Mirrorpool	OGW	N			1			
+Harmonious Archon (Extended Art)	ELD	N			1			
+"Emry, Lurker of the Loch"	ELD	N			1			
+Underrealm Lich	GRN	N			1			
+Goblin Chainwhirler	PPM20	N			1			
+Grafdiggers Cage	PPM20	N			1			
+Elvish Reclaimer	PPM20	N			1			
+Leyline of Abundance	PPM20	N			1			
+								
+Thunderfoot Baloth	C16	N			1			
+Beast Whisperer	GRN	N			1			
+Dawn of Hope	GRN	N			1			
+Slaughter of the Strong	PPM20	N			1			
+Steel Leaf Champion	PPM20	N			1			
+"Mu Yanling, Sky Dancer"	M20	N			1			
+Mystical Dispute	ELD	N			1			
+Bonecrusher Giant	ELD	N			2			
+"Vilis, Broker of Blood"	PPM20	N			2			
+Schememing Symmetry	PPM20	N			2			
+Pelt Collector	GRN	N			3			
+Knight of Autumn	GRN	N			6			
+Thief of Sanity	GRN	N			6			
+								
+Sulfur Falls	DOM	N			2			
+Rootbound Crag	M11	N			1			
+Rootbound Crag	M12	N			1			
+Rootbound Crag	RIX	N			1			
+Fellwar Stone	C16	N			1			
+"Ephara, God of the Polis"	BNG	N			1			
+Mystic Forge	M20	N			1			
+"Mu Yanling, Sky Dancer"	PPM20	N			1			
+"Torbran, Thane of Red Fell"	ELD	N			1			
+								
+Bonecrusher Giant (Showcase)	ELD	N			1			
+The Circle of Loyalty (Extended Art)	ELD	N			1			
+Supreme Phantom	PPM20	N			1			
+Castle Embereth (Extended Art)	ELD	N			1			
+Revel in Riches	PPM20	N			2			
+Doom Whisperer	GRN	N			2			
+Mystic Forge	PPM20	N			2			
+Thousand Year Storm	GRN	N			6			
+								
+Hushbringer (Extended Art)	ELD	N			1			
+Giver of Runes	MH1	N			1			
+Unbound Flourishing	MH1	N			1			
+Fauna Shaman	UMA	N			1			
+"Chandra, Acolyte of Flame"	PPM20	N			2			
