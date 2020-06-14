@@ -39,12 +39,12 @@ namespace MTGInventory
 
         public Inventory()
         {
-            loadConfig("config.JSON");
+            /*loadConfig("config.JSON");
             setBearerTokenAsync().Wait();
             setGroupIDsAsync().Wait();
             processFile();
             outputFile();
-            outputEditionsFile();
+            outputEditionsFile();*/
 
         }
 
@@ -181,7 +181,7 @@ namespace MTGInventory
 
 
 
-        private void processFile(string filepath)
+        public void processFile(string filepath)
         {
             using (System.IO.StreamReader sr = File.OpenText(filepath))
             {
@@ -198,7 +198,7 @@ namespace MTGInventory
 
         }
 
-        private void processFile()
+        public void processFile()
         {
             var filePath = "";
             using (System.Windows.Forms.OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -233,7 +233,7 @@ namespace MTGInventory
         }
 
 
-        private void outputEditionsFile()
+        public void outputEditionsFile()
         {
             string fName = "SetAbbreviations.mtgi";
             using (System.IO.StreamWriter file =
