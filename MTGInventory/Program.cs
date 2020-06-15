@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 namespace MTGInventory
 {
@@ -20,8 +20,8 @@ namespace MTGInventory
             //Application.SetHighDpiMode(HighDpiMode.SystemAware);
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            //Inventory i = new Inventory();
+            //Application.Run(new Form1());
+            Inventory i = new Inventory("C:\\Users\\Chris\\source\\repos2020\\MTGInventory\\MTGInventory\\bin\\Debug\\netcoreapp3.1\\InventoryFile_07_05_2020.mtgi");
         }
     }
 
@@ -37,42 +37,17 @@ namespace MTGInventory
         string outPutFileName;
 
 
-        public Inventory()
+
+        public Inventory(string filePath)
         {
-            /*loadConfig("config.JSON");
+
+            loadConfig("config.JSON");
             setBearerTokenAsync().Wait();
             setGroupIDsAsync().Wait();
-            processFile();
+            processFile(filePath);
             outputFile();
-            outputEditionsFile();*/
-
+            outputEditionsFile();
         }
-
-        //public void loadConfig(string filepath)
-        //{
-        //    using (System.IO.StreamReader sr = File.OpenText(filepath))
-        //    {
-        //        string s = String.Empty;
-        //        while ((s = sr.ReadLine()) != null)
-        //        {
-        //            string[] info = s.Split(":");
-        //            switch (info[0])
-        //            {
-        //                case "ExtraColumns":
-        //                    extraColumns = info[1].Split(",");
-        //                    for (int i = 0; i < extraColumns.Length; i++) extraColumns[i] = extraColumns[i].Trim();
-        //                    break;
-        //                case "FileName":
-        //                    outPutFileName = info[1].Trim();
-        //                    break;
-        //                case "InputFile":
-        //                    inputFileName = info[1].Trim();
-        //                    break;
-
-        //            }
-        //        }
-        //    }
-        //}
 
         public void loadConfig(string filepath)
         {
@@ -108,13 +83,15 @@ namespace MTGInventory
             //Otherwise we need a new token
             using (var httpClient = new HttpClient())
             {
+
                 using (var request = new HttpRequestMessage(new HttpMethod("POST"), "https://api.tcgplayer.com/token"))
                 {
                     request.Content = new StringContent("grant_type=client_credentials&client_id=" + publicKey + "&client_secret=" + privateKey);
                     request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/x-www-form-urlencoded");
 
+                   
                     var response = await httpClient.SendAsync(request);
-
+                    
                     JObject responseJSON = JObject.Parse(response.Content.ReadAsStringAsync().Result);
 
                     bearerToken = responseJSON.Property("access_token").Value.ToString();
@@ -144,10 +121,12 @@ namespace MTGInventory
 
                 while (offset < limit)
                 {
-
+                    
                     using (var request = new HttpRequestMessage(new HttpMethod("GET"), "http://api.tcgplayer.com/v1.32.0/catalog/groups?categoryId=1&limit=100&offset=" + offset))
                     {
-                        request.Headers.TryAddWithoutValidation("Authorization", "bearer " + bearerToken);
+                        request.Headers.Add("Authorization", "bearer " + bearerToken);
+                       
+                        
                         var response = await httpClient.SendAsync(request);
 
                         JObject responseJSON = JObject.Parse(response.Content.ReadAsStringAsync().Result);
@@ -157,11 +136,6 @@ namespace MTGInventory
                         foreach (JToken j in responseJSON.Property("results").Value.Children())
                         {
                             JObject set = JObject.Parse(j.ToString());
-
-                            if (editions.ContainsKey(set.Property("abbreviation").Value.ToString()))
-                            {
-                                string s = set.Property("abbreviation").Value.ToString();
-                            }
 
                             if (set.Property("abbreviation").Value.ToString() != "")
                             {
@@ -198,21 +172,6 @@ namespace MTGInventory
 
         }
 
-        public void processFile()
-        {
-            var filePath = "";
-            using (System.Windows.Forms.OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    filePath = openFileDialog.FileName;
-                }
-            }
-            processFile(filePath);
-
-
-
-        }
 
         public void outputFile()
         {

@@ -20,25 +20,19 @@ namespace MTGInventory
             this.Show();
             try
             {
-                Inventory i = new Inventory();
-                lblState.Text = "Loading Config";
-                this.Refresh();
-                i.loadConfig("config.JSON");
-                lblState.Text = "Getting Token";
-                this.Refresh();
-                i.setBearerTokenAsync().Wait();
-                lblState.Text = "Getting Set Info";
-                this.Refresh();
-                i.setGroupIDsAsync().Wait();
-                lblState.Text = "Processing Input File";
-                this.Refresh();
-                i.processFile();
-                lblState.Text = "Writing Output File";
-                this.Refresh();
-                i.outputFile();
-                lblState.Text = "Making Set File";
-                this.Refresh();
-                i.outputEditionsFile();
+
+
+                var filePath = "";
+                using (System.Windows.Forms.OpenFileDialog openFileDialog = new OpenFileDialog())
+                {
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        filePath = openFileDialog.FileName;
+                    }
+                }
+
+
+                Inventory i = new Inventory(filePath);
                 System.Windows.Forms.MessageBox.Show("Done");
                 this.Close();
             } catch (Exception e)
