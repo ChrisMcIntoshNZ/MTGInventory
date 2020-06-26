@@ -511,6 +511,8 @@ C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp
 C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp3.1\win-x86\MTGInventory.csproj.CopyComplete
 C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp3.1\win-x86\MTGInventory.dll
 C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp3.1\win-x86\MTGInventory.pdb
-C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\bin\Release\netcoreapp3.1\win-x86\mscordaccore_x86_x86_4.700.20.20201.dll
 C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp3.1\win-x86\MTGInventory.csproj.CoreCompileInputs.cache
 C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp3.1\win-x86\MTGInventory.genruntimeconfig.cache
+C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\bin\Release\netcoreapp3.1\win-x86\mscordaccore_x86_x86_4.700.20.26901.dll
+C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp3.1\win-x86\MTGInventory.Form1.resources
+C:\Users\Chris\source\repos2020\MTGInventory\MTGInventory\obj\Release\netcoreapp3.1\win-x86\MTGInventory.csproj.GenerateResource.cache
