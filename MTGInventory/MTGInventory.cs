@@ -23,7 +23,6 @@ namespace MTGInventory
 
         public Inventory(string filePath)
         {
-
             loadConfig("config.JSON");
             setBearerTokenAsync().Wait();
             setGroupIDsAsync().Wait();
@@ -122,6 +121,11 @@ namespace MTGInventory
 
                             if (set.Property("abbreviation").Value.ToString() != "")
                             {
+                                //if(set.Property("name").Value.ToString() == "Nemesis")
+                                //{
+                                //    var bleh = "";
+                                //}
+
                                 editions.Add(set.Property("abbreviation").Value.ToString(), set.Property("groupId").Value.ToString());
                                 editionNames.Add(set.Property("abbreviation").Value.ToString(), set.Property("name").Value.ToString());
                             }
@@ -245,6 +249,12 @@ namespace MTGInventory
             using (var httpClient = new HttpClient())
             {
                 string productID;
+
+                if (cardName == "Willbender")
+                {
+                    cardName = cardName;
+                    var sdf = editions[set];
+                }
 
                 using (var request = new HttpRequestMessage(new HttpMethod("GET"), "https://api.tcgplayer.com/v1.32.0/catalog/products?categoryId=1&productName=" + cardName.Replace(" ", "%20") + "&groupID=" + editions[set]))
                 {

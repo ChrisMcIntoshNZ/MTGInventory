@@ -45,6 +45,7 @@ C19	Commander 2019
 C20	Commander 2020
 CMA	Commander Anthology
 CM2	Commander Anthology Volume II
+CC1	Commander Collection: Green
 CM1	Commander's Arsenal
 CON	Conflux
 CNS	Conspiracy
@@ -57,6 +58,7 @@ DST	Darksteel
 DKM	Deckmasters Garfield vs Finkel
 DIS	Dissension
 DOM	Dominaria
+2XM	Double Masters
 DGM	Dragon's Maze
 DTK	Dragons of Tarkir
 DDH	Duel Decks: Ajani vs. Nicol Bolas
@@ -128,6 +130,7 @@ JATC	JingHe Age Token Cards
 JOU	Journey Into Nyx
 JDG	Judge Promos
 JUD	Judgment
+JMP	Jumpstart
 JSS	Junior Series Promos
 KLD	Kaladesh
 KTK	Khans of Tarkir
@@ -238,7 +241,7 @@ UGL	Unglued
 UNH	Unhinged
 UMP	Unique and Miscellaneous Promos
 2ED	Unlimited Edition
-UNS	Unsanctioned
+UND	Unsanctioned
 UST	Unstable
 UDS	Urza's Destiny
 ULG	Urza's Legacy
@@ -255,3 +258,4 @@ WWK	Worldwake
 WPN	WPN & Gateway Promos
 ZEN	Zendikar
 EXP	Zendikar Expeditions
+ZNR	Zendikar Rising

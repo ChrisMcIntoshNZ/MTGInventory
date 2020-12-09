@@ -21,6 +21,11 @@ namespace MTGInventory
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
+            if (args.Length == 0) {
+                args = new string[1];
+                args[0] = "C:\\Users\\Chris\\Documents\\Bleh\\Gonti.mtgi";
+            }
+
             Inventory i = new Inventory(args[0]);
         }
     }
